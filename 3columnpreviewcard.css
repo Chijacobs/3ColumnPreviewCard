@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap);
+
+body{
+    font-family: 'Lexend Deca', sans-serif, 'Big Shoulders Display', cursive;
+    font-size: 15px;
+    min-height: 100vh;
+    margin: 50px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+.row{
+   /* padding: 50px;*/
+    margin: 0 auto;
+    max-width: 300px;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 100px;
+}
+
+.column1, .column2, .column3 {
+    float: left;
+    width: 300px;
+    padding: 40px 30px 10px 30px;
+    height: 500px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+.column2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.column3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
+h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.column1 button{
+    color:hsl(31, 77%, 52%);
+}
+
+.column2 button{
+    color:hsl(184, 100%, 22%);;
+}
+
+.column3 button{
+    color:hsl(179, 100%, 13%);
+}
+
+@media (min-width: 375px) {
+    .column1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .column3{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .column1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .column3{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
